@@ -10,11 +10,11 @@
 			var i, tabcontent, tablinks;
 			tabcontent = document.getElementsByClassName("tabcon");
 			for (i = 0; i < tabcontent.length; i++) {
-			tabcontent[i].style.display = "none";
+				tabcontent[i].style.display = "none";
 			}
 			tablinks = document.getElementsByClassName("tablinks");
 			for (i = 0; i < tablinks.length; i++) {
-			tablinks[i].className = tablinks[i].className.replace(" active", "");
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
 			}
 			console.log(tabName);
 			document.getElementById(tabName).style.display = "block";
@@ -89,10 +89,10 @@
 	<div id="container">
 		<div class="tabWrap cf">
 			<ul class="tabmenu">
-				<button onclick="openTab(event, 'tab1');" class="tablinks">tab1</button>
-				<button onclick="openTab(event, 'tab2');" class="tablinks">tab2</button>
-				<button onclick="openTab(event, 'tab3');" class="tablinks">tab3</button>
-				<button onclick="openTab(event, 'tab4');" class="tablinks">tab4</button>
+				<li onclick="openTab(event, 'tab1');" class="tablinks">tab1</li>
+				<li onclick="openTab(event, 'tab2');" class="tablinks">tab2</li>
+				<li onclick="openTab(event, 'tab3');" class="tablinks">tab3</li>
+				<li onclick="openTab(event, 'tab4');" class="tablinks">tab4</li>
 			</ul>
 			<ul class="tabcontWrap">
 				<li id="tab1" class="tabcon">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</li>
